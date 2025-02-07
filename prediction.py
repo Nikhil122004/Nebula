@@ -69,7 +69,7 @@ plt.savefig("actual_vs_predicted.png")  # Save the image
 plt.close()
 
 plt.figure(figsize=(12, 8))  # Increase figure size
-sns.barplot(x=feature_importances[sorted_indices], y=np.array(feature_names)[sorted_indices], palette="viridis")
+sns.barplot(x=feature_importances[sorted_indices], y=np.array(feature_names)[sorted_indices])
 plt.xlabel("Feature Importance", fontsize=14)
 plt.ylabel("Feature", fontsize=14)
 plt.title("Feature Importance in Prediction Model", fontsize=18, fontweight='bold')
